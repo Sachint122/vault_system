@@ -106,8 +106,12 @@ Create a `.env` file in the root directory:
 
 ```env
 PORT=5000
-MONGO_URI=your_mongodb_atlas_connection_string
 NODE_ENV=development
+MONGO_URI=mongodb://localhost:27017/vault_system
+JWT_SECRET=your_jwt_secret_here
+JWT_EXPIRE=7d
+FRONTEND_URL=http://localhost:5173
+
 ```
 
 ---
