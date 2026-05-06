@@ -86,7 +86,7 @@ Duplicate uploads do NOT increase storage usage.
 ## Clone Repository
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/Sachint122/vault_system.git
 cd vault_system
 ```
 
@@ -111,7 +111,6 @@ MONGO_URI=mongodb://localhost:27017/vault_system
 JWT_SECRET=your_jwt_secret_here
 JWT_EXPIRE=7d
 FRONTEND_URL=http://localhost:5173
-
 ```
 
 ---
@@ -185,6 +184,16 @@ Performs occurrence-based deletion logic.
 
 ---
 
+# Bonus Architecture Support
+
+The backend scaffold generated through `devil-backend-nodejs` already includes JWT authentication utilities, auth middleware support, validation structure, and production-ready security patterns.
+
+Although authentication was marked as an optional bonus requirement in the assignment, the File Vault APIs were intentionally kept publicly accessible to simplify evaluation, testing, and API verification workflow.
+
+The architecture is already auth-ready and can be extended to protected routes without major structural changes.
+
+---
+
 # Storage Note
 
 This implementation currently uses local filesystem storage for assignment simplicity and faster development.
@@ -210,6 +219,14 @@ would be preferred.
 * Swagger/OpenAPI documentation
 * Redis caching
 * Queue-based processing
+
+---
+
+# Live Deployment
+
+Render URL:
+
+[https://vault-system.onrender.com/](https://vault-system.onrender.com/)
 
 ---
 
